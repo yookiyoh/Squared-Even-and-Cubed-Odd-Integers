@@ -11,18 +11,18 @@ with open("integers.txt", "w") as file:
     
     # use of while looping
     while True:
-        
-        # asking the user for a number input
-        int_input = input("Enter a number: ")
-        
-        # check if the input is an integer
-        if int_input <= 0 or int_input >= 0:
+        try:
+            asking the user for a number input
+            int_input = input("Enter a number: ")
+            
+            # check if the input is an integer
+            if int_input <= 0 or int_input >= 0:
 
             # user input will be written to integers.txt file
             int_input.write(str(int_input) + '\n')
             continue
-
-# if not, break out of the loop
+        
+        # if not, break out of the loop
 
 # write the integer to the file
 
