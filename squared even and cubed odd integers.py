@@ -14,8 +14,9 @@ with open("integers.txt", "w") as file:
         
         # asking the user for a number input
         int_input = input("Enter a number: ")
-
-# check if the input is an integer
+        
+        # check if the input is an integer
+        if int_input <= 0 or int_input >= 0:
 
 # if not, break out of the loop
 
