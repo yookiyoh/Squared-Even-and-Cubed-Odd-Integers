@@ -8,35 +8,25 @@
 
 def user_input():
     # open the integers.txt file in write mode
-    with open("integers.txt", "w") as file:
+    with open("integers.txt", "w") as input_file:
         
         # use of while looping
         while True:
             try:
                 # asking the user for a number input
-                int_input = input("Enter a number: ")
-                
+                user_input = int(input("Enter a number: "))  
                 # check if the input is an integer
-                if int_input <= 0 or int_input >= 0:
-                    
+                if user_input <= 0 or user_input >= 0:
                     # user input will be written to integers.txt file
-                    int_input.write(str(int_input) + '\n')
+                    input_file.write(str(user_input) + '\n')
                     continue
             
             # if not, break out of the loop
-            except:
+            except ValueError:
                 print("[An error occurred. Proceeding to exit the program...]")
                 break
 
 def main():
-    # create empty lists for even and odd integers
-    even_integers = []
-    odd_integers = []
-    
-    # sort the integers in ascending order
-    even_integers.sort()
-    odd_integers.sort()
-
     # open the integers.txt file in read mode, double.txt file in write mode, triple.txt in write mode
     with open("integers.txt", "r") as input_file1, open("double.txt", "w") as even_squared1, open("triple.txt", "w") as odd_cubed1:
 
@@ -53,7 +43,7 @@ def main():
                 squared_even = int_inputs ** 2
 
                 # squared even integers will be inputted to double.txt file
-                even_squared1.write("\n".join(str(squared_even) for line in int_inputs))
+                even_squared1.write(str(squared_even) + "\n")
 
             # if the inputted integer is odd
             elif int_inputs % 2 == 1:
@@ -62,10 +52,17 @@ def main():
                 cubed_odd = int_inputs ** 3
 
                 # cubed odd integers will be inputted to triple.txt file
-                odd_cubed1.write("\n".join(str(cubed_odd) for line in int_inputs))
+                odd_cubed1.write(str(cubed_odd) + "\n")
 
 def outro():
     # print a goodbye message and terminate the program
     print("\nThank you for using this program!")
     print("Program terminating in...")
     exit()
+
+
+
+# initialize
+user_input()
+main()
+outro()
