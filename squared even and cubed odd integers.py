@@ -22,8 +22,10 @@ with open("integers.txt", "w") as file:
             int_input.write(str(int_input) + '\n')
             continue
         
-        
         # if not, break out of the loop
+        except:
+            print("[An error occurred. Proceeding to exit the program...]")
+            break
 
 # write the integer to the file
 
