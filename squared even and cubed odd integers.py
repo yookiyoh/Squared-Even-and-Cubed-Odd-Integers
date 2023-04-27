@@ -6,6 +6,11 @@
 # (similar acquisition from Program 1 where extraction of odd and even integers take place)
 # Thus transferred into separate text files per each categorical result.
 
+import time
+import pyfiglet
+from colorama import Fore, Style
+from tqdm import tqdm
+
 def user_input():
     # open the integers.txt file in write mode
     with open("integers.txt", "w") as input_file:
