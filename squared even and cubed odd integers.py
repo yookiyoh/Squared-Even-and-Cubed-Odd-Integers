@@ -11,6 +11,9 @@ import pyfiglet
 from colorama import Fore, Style
 from tqdm import tqdm
 
+# initialize colorama
+init()
+
 def user_input():
     # open the integers.txt file in write mode
     with open("integers.txt", "w") as input_file:
