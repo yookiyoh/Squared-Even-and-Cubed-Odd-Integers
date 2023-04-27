@@ -30,10 +30,8 @@ def user_input():
 
 def main():
     # open the integers.txt file in read mode, double.txt file in write mode, triple.txt in write mode
-with open("integers.txt", "r") as file:
+    with open("integers.txt", "r") as input_file1, open("double.txt", "w") as even_squared1, open("triple.txt", "w") as odd_cubed1:
     
-    # read all the lines in the integers.txt file and convert them into integers
-    integers = [int(line.strip()) for line in file.readlines()]
 
 # create empty lists for even and odd integers
 even_integers = []
