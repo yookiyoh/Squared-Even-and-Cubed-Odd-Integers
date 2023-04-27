@@ -93,7 +93,7 @@ def outro():
 
 
 
-# initialize
+# initialized
 intro()
 user_input()
 main()
