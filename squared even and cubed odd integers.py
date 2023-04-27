@@ -34,7 +34,8 @@ def main():
     odd_integers = []
     
     # sort the integers in ascending order
-    integers.sort()
+    even_integers.sort()
+    odd_integers.sort()
 
     # open the integers.txt file in read mode, double.txt file in write mode, triple.txt in write mode
     with open("integers.txt", "r") as input_file1, open("double.txt", "w") as even_squared1, open("triple.txt", "w") as odd_cubed1:
