@@ -7,8 +7,9 @@
 # Thus transferred into separate text files per each categorical result.
 
 # open the integers.txt file in write mode
-
-# use of while looping
+with open("integers.txt", "w") as file:
+    
+    # use of while looping
 
 # asking the user for input
 
