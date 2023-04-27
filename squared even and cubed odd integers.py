@@ -38,6 +38,16 @@ def main():
             # convert inputs from integers.txt into integers
             int_inputs = int(line)
 
+            # if the inputted integer is even
+            if int_inputs % 2 == 0:
+
+                # inputted integer will be squared
+                squared_even = int_inputs ** 2
+
+                # squared even integers will be inputted to double.txt file
+                even_squared1.write(str(squared_even) + "\n")
+
+
 # create empty lists for even and odd integers
 even_integers = []
 odd_integers = []
