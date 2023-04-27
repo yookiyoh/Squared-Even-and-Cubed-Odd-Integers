@@ -29,8 +29,9 @@ with open("integers.txt", "w") as file:
 
 # open the integers.txt file in read mode
 with open("integers.txt", "r") as file:
-
-# read all the lines in the integers.txt file and convert them into integers
+    
+    # read all the lines in the integers.txt file and convert them into integers
+    integers = [int(line.strip()) for line in file.readlines()]
 
 # create empty lists for even and odd integers
 
