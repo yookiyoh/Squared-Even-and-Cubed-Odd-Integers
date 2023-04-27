@@ -8,7 +8,7 @@
 
 import time
 import pyfiglet
-from colorama import Fore, Style
+from colorama import Fore, Back, Style
 from tqdm import tqdm
 
 def intro():
@@ -31,7 +31,7 @@ def user_input():
         while True:
             try:
                 # asking the user for a number input
-                user_input = int(input("Enter a number: "))  
+                user_input = int(input(f"Enter a number: "))  
                 # check if the input is an integer
                 if user_input <= 0 or user_input >= 0:
                     # user input will be written to integers.txt file
@@ -40,7 +40,10 @@ def user_input():
             
             # if not, break out of the loop
             except ValueError:
-                print("[Proceeding to exit the program...]")
+                print(Fore.LIGHTRED_EX + "\n[Proceeding to exit the program in...]")
+                for i in range(3, 0, -1):
+                    print(f"{Fore.CYAN}{Back.WHITE}{Style.BRIGHT}{i}{Style.RESET_ALL}")
+                    time.sleep(0.8)
                 break
 
 def main():
