@@ -31,6 +31,9 @@ def user_input():
 def main():
     # open the integers.txt file in read mode, double.txt file in write mode, triple.txt in write mode
     with open("integers.txt", "r") as input_file1, open("double.txt", "w") as even_squared1, open("triple.txt", "w") as odd_cubed1:
+
+        # read integers.txt per line
+        for line in input_file1:
     
 
 # create empty lists for even and odd integers
@@ -39,14 +42,6 @@ odd_integers = []
 
 # sort the integers in ascending order
 integers.sort()
-
-# if the acquired integer is even
-   # square
-   # squared even integers will be tranferred to double.txt
-
-# if the acquired integer is odd
-   # cube
-   # cubed odd integers will be transferred to triple.txt
 
 # open the double.txt file in write mode and write squared even integers to it
 
