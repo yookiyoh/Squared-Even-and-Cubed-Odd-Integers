@@ -23,7 +23,7 @@ def user_input():
             
             # if not, break out of the loop
             except ValueError:
-                print("[An error occurred. Proceeding to exit the program...]")
+                print("[Proceeding to exit the program...]")
                 break
 
 def main():
