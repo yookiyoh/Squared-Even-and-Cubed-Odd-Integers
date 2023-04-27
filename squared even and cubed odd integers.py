@@ -28,7 +28,8 @@ def user_input():
                 print("[An error occurred. Proceeding to exit the program...]")
                 break
 
-# open the integers.txt file in read mode
+def main():
+    # open the integers.txt file in read mode, double.txt file in write mode, triple.txt in write mode
 with open("integers.txt", "r") as file:
     
     # read all the lines in the integers.txt file and convert them into integers
