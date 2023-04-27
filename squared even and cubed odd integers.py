@@ -38,7 +38,7 @@ even_integers = []
 odd_integers = []
 
 # sort the integers in ascending order
-numbers.sort()
+integers.sort()
 
 # iterate over the integers and extract even and odd integers
 
