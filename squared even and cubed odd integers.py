@@ -12,8 +12,8 @@ with open("integers.txt", "w") as file:
     # use of while looping
     while True:
         
-
-# asking the user for input
+        # asking the user for a number input
+        int_input = input("Enter a number: ")
 
 # check if the input is an integer
 
