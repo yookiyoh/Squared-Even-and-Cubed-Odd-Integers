@@ -47,6 +47,14 @@ def main():
                 # squared even integers will be inputted to double.txt file
                 even_squared1.write(str(squared_even) + "\n")
 
+            # if the inputted integer is odd
+            elif int_inputs % 2 == 1:
+
+                # inputted integer will be cubed
+                cubed_odd = int_inputs ** 3
+
+                # cubed odd integers will be inputted to triple.txt file
+                odd_cubed1.write(str(cubed_odd) + "\n")
 
 # create empty lists for even and odd integers
 even_integers = []
