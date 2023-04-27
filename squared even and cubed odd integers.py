@@ -63,5 +63,8 @@ def main():
                 # cubed odd integers will be inputted to triple.txt file
                 odd_cubed1.write("\n".join(str(cubed_odd) for line in int_inputs))
 
-
-# print a goodbye message and terminate the program
+def outro():
+    # print a goodbye message and terminate the program
+    print("\nThank you for using this program!")
+    print("Program terminating in...")
+    exit()
