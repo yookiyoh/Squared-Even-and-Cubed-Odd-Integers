@@ -73,16 +73,28 @@ def main():
 
                 # cubed odd integers will be inputted to triple.txt file
                 odd_cubed1.write(str(cubed_odd) + "\n")
+    
+    # print progress bar while writing to the file
+    print(Fore.GREEN + "\nSaving to file...\n")
+    for i in tqdm(range(100)):
+        time.sleep(0.01)
+
+    time.sleep(2)
+    print(Fore.YELLOW + "\n[File saved successfully!]\n")
 
 def outro():
     # print a goodbye message and terminate the program
     print("\nThank you for using this program!")
     print("Program terminating in...")
+    for i in range(3, 0, -1):
+        print(f"{Fore.CYAN}{Back.WHITE}{Style.BRIGHT}{i}{Style.RESET_ALL}")
+        time.sleep(0.8)
     exit()
 
 
 
 # initialize
+intro()
 user_input()
 main()
 outro()
