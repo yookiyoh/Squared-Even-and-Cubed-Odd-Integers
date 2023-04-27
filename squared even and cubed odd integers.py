@@ -6,26 +6,27 @@
 # (similar acquisition from Program 1 where extraction of odd and even integers take place)
 # Thus transferred into separate text files per each categorical result.
 
-# open the integers.txt file in write mode
-with open("integers.txt", "w") as file:
-    
-    # use of while looping
-    while True:
-        try:
-            # asking the user for a number input
-            int_input = input("Enter a number: ")
-            
-            # check if the input is an integer
-            if int_input <= 0 or int_input >= 0:
-
-            # user input will be written to integers.txt file
-            int_input.write(str(int_input) + '\n')
-            continue
+def user_input():
+    # open the integers.txt file in write mode
+    with open("integers.txt", "w") as file:
         
-        # if not, break out of the loop
-        except:
-            print("[An error occurred. Proceeding to exit the program...]")
-            break
+        # use of while looping
+        while True:
+            try:
+                # asking the user for a number input
+                int_input = input("Enter a number: ")
+                
+                # check if the input is an integer
+                if int_input <= 0 or int_input >= 0:
+                    
+                    # user input will be written to integers.txt file
+                    int_input.write(str(int_input) + '\n')
+                    continue
+            
+            # if not, break out of the loop
+            except:
+                print("[An error occurred. Proceeding to exit the program...]")
+                break
 
 # open the integers.txt file in read mode
 with open("integers.txt", "r") as file:
@@ -39,8 +40,6 @@ odd_integers = []
 
 # sort the integers in ascending order
 integers.sort()
-
-# iterate over the integers and extract even and odd integers
 
 # if the acquired integer is even
    # square
