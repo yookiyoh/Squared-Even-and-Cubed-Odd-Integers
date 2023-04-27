@@ -52,7 +52,7 @@ def main():
                 squared_even = int_inputs ** 2
 
                 # squared even integers will be inputted to double.txt file
-                even_squared1.write(str(squared_even) + "\n")
+                even_squared1.write("\n".join(str(squared_even) for line in int_inputs))
 
             # if the inputted integer is odd
             elif int_inputs % 2 == 1:
@@ -61,8 +61,7 @@ def main():
                 cubed_odd = int_inputs ** 3
 
                 # cubed odd integers will be inputted to triple.txt file
-                odd_cubed1.write(str(cubed_odd) + "\n")
-
+                odd_cubed1.write("\n".join(str(cubed_odd) for line in int_inputs))
 
 
 # print a goodbye message and terminate the program
