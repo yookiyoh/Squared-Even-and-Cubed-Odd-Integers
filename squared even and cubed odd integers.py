@@ -8,7 +8,10 @@
 
 # open the integers.txt file in write mode
 with open("integers.txt", "w") as file:
+    
     # use of while looping
+    while True:
+        
 
 # asking the user for input
 
