@@ -12,7 +12,7 @@ with open("integers.txt", "w") as file:
     # use of while looping
     while True:
         try:
-            asking the user for a number input
+            # asking the user for a number input
             int_input = input("Enter a number: ")
             
             # check if the input is an integer
@@ -21,6 +21,7 @@ with open("integers.txt", "w") as file:
             # user input will be written to integers.txt file
             int_input.write(str(int_input) + '\n')
             continue
+        
         
         # if not, break out of the loop
 
