@@ -11,7 +11,17 @@ import pyfiglet
 from colorama import Fore, Style
 from tqdm import tqdm
 
-# initialize colorama
+def intro():
+    # display heading output
+    print("")
+    heading = pyfiglet.figlet_format("SQUARED EVEN, CUBED ODD", font="3-d", width=90)
+    print(Style.BRIGHT + Fore.YELLOW + heading)
+
+    # create introductory message
+    intro = "Input integers.\n"
+    intro += f"{Fore.GREEN}\nEnter any letter to terminate.{Style.RESET_ALL}\n"
+    print(intro)
+    time.sleep(1.5)
 
 def user_input():
     # open the integers.txt file in write mode
