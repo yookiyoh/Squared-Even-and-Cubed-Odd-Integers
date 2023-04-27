@@ -18,6 +18,10 @@ with open("integers.txt", "w") as file:
         # check if the input is an integer
         if int_input <= 0 or int_input >= 0:
 
+            # user input will be written to integers.txt file
+            int_input.write(str(int_input) + '\n')
+            continue
+
 # if not, break out of the loop
 
 # write the integer to the file
