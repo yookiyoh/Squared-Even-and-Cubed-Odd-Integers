@@ -34,7 +34,9 @@ def main():
 
         # read integers.txt per line
         for line in input_file1:
-    
+
+            # convert inputs from integers.txt into integers
+            int_inputs = int(line)
 
 # create empty lists for even and odd integers
 even_integers = []
